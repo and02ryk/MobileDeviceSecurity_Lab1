@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+        "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+
+        <key>CFBundleName</key>
+        <string>GeoSnap</string>
+        <key>CFBundleDisplayName</key>
+        <string>GeoSnap</string>
+        <key>CFBundleIdentifier</key>
+        <string>com.geosnap</string>
+        <key>CFBundleVersion</key>
+        <string>1</string>
+        <key>CFBundleShortVersionString</key>
+        <string>1.0</string>
+        <key>CFBundlePackageType</key>
+        <string>APPL</string>
+        <key>CFBundleExecutable</key>
+        <string>$(EXECUTABLE_NAME)</string>
+        <key>UILaunchStoryboardName</key>
+        <string>LaunchScreen</string>
+        <key>LSRequiresIPhoneOS</key>
+        <true/>
+
+        <!-- Требуется Compose Multiplatform для корректной работы на iPhone с ProMotion (120Hz) -->
+        <key>CADisableMinimumFrameDurationOnPhone</key>
+        <true/>
+
+        <key>NSCameraUsageDescription</key>
+        <string>GeoSnap использует камеру для создания фотографий, к которым будут прикреплены GPS-координаты.</string>
+
+        <key>NSLocationWhenInUseUsageDescription</key>
+        <string>GeoSnap использует геолокацию для автоматического прикрепления текущих координат к каждой фотографии.</string>
+
+        <key>MinimumOSVersion</key>
+        <string>14.0</string>
+
+        <key>UISupportedInterfaceOrientations</key>
+        <array>
+            <string>UIInterfaceOrientationPortrait</string>
+        </array>
+
+    </dict>
+</plist>
